@@ -4,10 +4,13 @@ from django.test import TestCase
 
 class MyTestCase(TestCase):
     
+    # @classmethod
+    # def setUpTestData(cls):
+    #     print("setUpTestData")
+
+    # def setUp(self):
+    #     print("setUp")
+
     def test_false_is_false(self):
         print("Method: test_false_is_false.")
         self.assertFalse(False)
-
-    def test_true_is_true(self):
-        print("Method: test_true_is_true.")
-        self.assertTrue(True)
