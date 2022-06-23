@@ -5,3 +5,7 @@ from django.shortcuts import render
 
 def home_view(request):
     return HttpResponse("OK")
+
+
+def author_detail(request, pk):
+    return HttpResponse(f"PK: {pk}")
